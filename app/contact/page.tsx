@@ -10,12 +10,6 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { cn } from "@/lib/utils";
-import { IconBrandGithub } from "@tabler/icons-react";
-import { IconBrandGoogle } from "@tabler/icons-react";
-import { IconBrandOnlyfans } from "@tabler/icons-react";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { useState } from "react";
 
 //navbar

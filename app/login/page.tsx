@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { auth } from "@/lib/firebaseConfig";
 import { cn } from "@/lib/utils";
 import { Label } from "@radix-ui/react-label";
-import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans } from "@tabler/icons-react";
+import { IconBrandGoogle } from "@tabler/icons-react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const provider = new GoogleAuthProvider();

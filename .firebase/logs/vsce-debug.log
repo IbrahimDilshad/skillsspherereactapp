@@ -98,3 +98,75 @@ Generated sources: index.cjs.js [153B] package.json [860B] react\package.json [4
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0419 23:15:40.807054    3492 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
 [debug] [2025-04-19T18:15:41.002Z] I0419 23:15:41.002622    3492 engine.go:170] [/emulator/ibrahim-dilshad 71ea] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0419 23:15:41.002622    3492 engine.go:170] [/emulator/ibrahim-dilshad 71ea] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-04-20T12:53:56.438Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-04-20T12:53:58.641Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-04-20T12:53:58.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-20T12:53:58.645Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-04-20T12:53:58.650Z] Checked if tokens are valid: false, expires at: 1745090132203
+[debug] [2025-04-20T12:53:58.651Z] Checked if tokens are valid: false, expires at: 1745090132203
+[debug] [2025-04-20T12:53:58.652Z] > refreshing access token with scopes: []
+[debug] [2025-04-20T12:53:58.655Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-20T12:53:58.656Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-20T12:53:58.712Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.2.0) on port 50001
+[debug] [2025-04-20T12:54:03.654Z] I0420 17:54:03.624468   17624 control.go:71] [/emulator/ibrahim-dilshad 9aaa] UpdateResources(): done
+Schema: sources: schema\schema.gql [2088B] 
+Connector "default": sources: connector\mutations.gql [1233B] connector\queries.gql [1802B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:03.624468   17624 control.go:71] [/emulator/ibrahim-dilshad 9aaa] UpdateResources(): done\nSchema: sources: schema\\schema.gql [2088B] \nConnector \"default\": sources: connector\\mutations.gql [1233B] connector\\queries.gql [1802B] \n"}}
+[debug] [2025-04-20T12:54:03.656Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-04-20T12:54:03.657Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-04-20T12:54:03.658Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\ibrah\\.cache\\firebase\\emulators\\dataconnect-emulator-2.2.0.exe","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=d:\\ibrahimdilshad\\ibrahim-dilshad\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\ibrah\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-2.2.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2025-04-20T12:54:03.978Z] I0420 17:54:03.767352   11088 env.go:20] Enabled Preview Flags: conn_evolution
+I0420 17:54:03.771221   11088 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:03.767352   11088 env.go:20] Enabled Preview Flags: conn_evolution\nI0420 17:54:03.771221   11088 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-04-20T12:54:04.052Z] I0420 17:54:04.023550   11088 control.go:71] [/emulator/ibrahim-dilshad d2e1] UpdateResources(): done
+Schema: sources: schema\schema.gql [2088B] 
+Connector "default": sources: connector\queries.gql [1802B] connector\mutations.gql [1233B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:04.023550   11088 control.go:71] [/emulator/ibrahim-dilshad d2e1] UpdateResources(): done\nSchema: sources: schema\\schema.gql [2088B] \nConnector \"default\": sources: connector\\queries.gql [1802B] connector\\mutations.gql [1233B] \n"}}
+[debug] [2025-04-20T12:54:04.369Z] I0420 17:54:04.077781   11088 env.go:20] Enabled Preview Flags: conn_evolution
+I0420 17:54:04.156323   11088 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "d:\\ibrahimdilshad\\ibrahim-dilshad\\dataconnect-generated\\js\\default-connector"
+I0420 17:54:04.171336   11088 collector.go:107] schema extensions wrote into "d:\\ibrahimdilshad\\ibrahim-dilshad\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [69396B] 
+I0420 17:54:04.332037   11088 collector.go:107] connector "default" javascriptSdk wrote into "d:\\ibrahimdilshad\\ibrahim-dilshad\\dataconnect-generated\\js\\default-connector"
+Generated sources: esm\index.esm.js [118B] README.md [2774B] react\esm\package.json [17B] react\esm\index.esm.js [0B] index.d.ts [246B] index.cjs.js [153B] package.json [860B] react\index.d.ts [228B] react\package.json [468B] react\index.cjs.js [0B] react\README.md [5417B] esm\package.json [17B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:04.077781   11088 env.go:20] Enabled Preview Flags: conn_evolution\nI0420 17:54:04.156323   11088 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI0420 17:54:04.171336   11088 collector.go:107] schema extensions wrote into \"d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [69396B] \nI0420 17:54:04.332037   11088 collector.go:107] connector \"default\" javascriptSdk wrote into \"d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: esm\\index.esm.js [118B] README.md [2774B] react\\esm\\package.json [17B] react\\esm\\index.esm.js [0B] index.d.ts [246B] index.cjs.js [153B] package.json [860B] react\\index.d.ts [228B] react\\package.json [468B] react\\index.cjs.js [0B] react\\README.md [5417B] esm\\package.json [17B] \n"}}
+[debug] [2025-04-20T12:54:04.434Z] I0420 17:54:04.389240   11088 installsdk.go:80] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:04.389240   11088 installsdk.go:80] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2025-04-20T12:54:04.475Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-20T12:54:04.476Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-20T12:54:04.523Z] [Firebase Plugin] User found:  ibrahimzdilshad@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-04-20T12:54:04.528Z] Checked if tokens are valid: true, expires at: 1745157243477
+[debug] [2025-04-20T12:54:04.531Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-04-20T12:54:06.719Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-20T12:54:06.719Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-04-20T12:54:09.055Z] E0420 17:54:09.048723   11088 installsdk.go:82] Failed to install package: exit status 0xc000013a
+I0420 17:54:09.048723   11088 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0420 17:54:09.048723   11088 installsdk.go:82] Failed to install package: exit status 0xc000013a\nI0420 17:54:09.048723   11088 load.go:115] Finished reloading\n"}}
+[debug] [2025-04-20T12:54:11.170Z] I0420 17:54:09.543319   11088 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:09.543319   11088 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-04-20T12:54:11.205Z] I0420 17:54:11.204564   11088 engine.go:170] [/emulator/ibrahim-dilshad d2e1] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0420 17:54:11.204564   11088 engine.go:170] [/emulator/ibrahim-dilshad d2e1] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-04-20T12:55:47.860Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2025-04-20T12:55:47.863Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-04-20T12:55:47.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-20T12:55:47.869Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-04-20T12:55:47.876Z] Checked if tokens are valid: true, expires at: 1745157243477
+[debug] [2025-04-20T12:55:47.877Z] [Firebase Plugin] User found:  ibrahimzdilshad@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-04-20T12:55:47.881Z] Checked if tokens are valid: true, expires at: 1745157243477
+[debug] [2025-04-20T12:55:47.883Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-04-20T12:55:47.896Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2025-04-20T12:55:47.896Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-04-20T12:55:47.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-20T12:55:47.900Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-04-20T12:55:47.901Z] Checked if tokens are valid: true, expires at: 1745157243477
+[debug] [2025-04-20T12:55:47.902Z] [Firebase Plugin] User found:  ibrahimzdilshad@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-04-20T12:55:47.929Z] Checked if tokens are valid: true, expires at: 1745157243477
+[debug] [2025-04-20T12:55:47.933Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-04-20T12:55:48.906Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-20T12:55:48.908Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-04-20T12:55:49.811Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-20T12:55:49.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
