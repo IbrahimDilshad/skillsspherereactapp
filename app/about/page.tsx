@@ -1,121 +1,12 @@
 "use client";
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+import { NavbarDemo } from "@/components/ui/navbarDemo";
+import Image from "next/image";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Timeline } from "@/components/ui/timeline";
 import { useState } from "react";
-
-//navbar
-export function NavbarDemo() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Books",
-      link: "/books",
-    },
-    {
-      name: "Courses",
-      link: "/courses",
-    },
-    {
-      name: "Home Tuitions",
-      link: "/hometuitions",
-    },
-    {
-        name: "Products",
-        link: "/products",
-    },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  return (
-    <div className="relative w-full">
-      <Navbar>
-        {/* Desktop Navigation */}
-        <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
-          </div>
-        </NavBody>
-
-        {/* Mobile Navigation */}
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-          </MobileNavHeader>
-
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
-          </MobileNavMenu>
-        </MobileNav>
-      </Navbar>
-
-      {/* Navbar */}
+import {Footer} from "@/components/ui/footer";
 
 
-    </div>
-  );
-}
 //hero
 export function SparklesPreview() {
   return (
@@ -159,29 +50,29 @@ export function TimelineDemo() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+            <Image
+              src="/images/stamp logo.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+            <Image
+              src="/images/stamp logo.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
+            <Image
+              src="/images/stamp logo.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
+            <Image
+              src="/images/stamp logo.png"
               alt="startup template"
               width={500}
               height={500}
@@ -204,29 +95,29 @@ export function TimelineDemo() {
             not. Here are some more example of beautiful designs I built.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/cards.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="cards template"
               width={500}
               height={500}
@@ -261,29 +152,29 @@ export function TimelineDemo() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="feature template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="bento template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
-              src="https://assets.aceternity.com/cards.png"
+            <Image
+              src="/images/stamp logo.png"
               alt="cards template"
               width={500}
               height={500}
@@ -302,92 +193,10 @@ export function TimelineDemo() {
 }
 //about page content end
 
-//footer
-export function Footer() {
-  return (
-    <div>
-    <div className="lg:flex lg:flex-row bg-neutral-100 dark:bg-neutral-900">
-      <div className="flex flex-col w-full max-w-7xl mx-auto">
-      <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Skills Sphere
-        </h4>
-        <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-left font-normal dark:text-neutral-300 mx-5">
-            Empowering Your Growth <br />Project of IDs Corporations
-        </p>
-      </div>
-      <div className="flex flex-col w-full max-w-7xl mt-5 mx-auto">
-        <h3 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-      Quick Links
-        </h3>
-          <ul>
-            <li>
-              <a href="/about" className="text-neutral-500 dark:text-neutral-300 mx-5">About Us</a>
-            </li>
-            <li>
-              <a href="/contact" className="text-neutral-500 dark:text-neutral-300 mx-5">Contact Us</a>
-            </li>
-            <li>
-              <a href="/courses" className="text-neutral-500 dark:text-neutral-300 mx-5">Courses</a>
-            </li>
-            <li>
-              <a href="/blogs" className="text-neutral-500 dark:text-neutral-300 mx-5">blogs</a>
-            </li>
-            <li>
-              <a href="/products" className="text-neutral-500 dark:text-neutral-300 mx-5">Products</a>
-            </li>
-            <li>
-              <a href="/hometuitions" className="text-neutral-500 dark:text-neutral-300 mx-5">Home Tuitions</a>
-            </li>
-            <li>
-              <a href="/books" className="text-neutral-500 dark:text-neutral-300 mx-5">Books</a>
-            </li>
-          </ul>
-      </div>
 
-      <div className="flex flex-col w-full max-w-7xl mt-5 mx-auto">
-        <h3 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Resources
-        </h3>
-          <ul>
-            <li>
-              <a href="/about" className="text-neutral-500 dark:text-neutral-300 mx-5">Faqs</a>
-            </li>
-            <li>
-              <a href="/contact" className="text-neutral-500 dark:text-neutral-300 mx-5">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/courses" className="text-neutral-500 dark:text-neutral-300 mx-5">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="/blogs" className="text-neutral-500 dark:text-neutral-300 mx-5">Support</a>
-            </li>
-            <li>
-              <a href="/products" className="text-neutral-500 dark:text-neutral-300 mx-5">Become a tutor</a>
-            </li>
-          </ul>
-      </div>
-      <div className="flex flex-col w-full max-w-7xl mx-auto">
-      <h4 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Contact info
-        </h4>
-        <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-left font-normal dark:text-neutral-300 mx-5">
-           Email: sillzsphere@gmail.com<br />
-           Phone: +92 3706777957<br />
-           Address: PCSIR Phase 1, Lahore
-        </p>
-      </div>
-    </div>
-    <div>
-      <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-center font-normal dark:text-neutral-300 mxauto">
-        © 2023 Skills Sphere. All rights reserved.
-      </p>
-    </div>
-    </div>
-  );
-}
 //footerend
 //calling components
-  export default function about() {
+  export default function About() {
     return (
       <div>
         <NavbarDemo/>

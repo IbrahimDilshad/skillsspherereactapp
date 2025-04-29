@@ -1,122 +1,14 @@
 "use client";
 //imports
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+import { NavbarDemo } from "@/components/ui/navbarDemo";
+import { Footer } from "@/components/ui/footer";
+import Image from "next/image";
 import { useState } from "react";
-import { NavbarDemo } from "../page";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import Link from "next/link";
 
-//Navbar
-export function AboutPage() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Books",
-      link: "/books",
-    },
-    {
-      name: "Courses",
-      link: "/courses",
-    },
-    {
-      name: "Home Tuitions",
-      link: "/hometuitions",
-    },
-    {
-        name: "Products",
-        link: "/products",
-    },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  return (
-    <div className="relative w-full">
-      <Navbar>
-        {/* Desktop Navigation */}
-        <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
-          </div>
-        </NavBody>
-
-        {/* Mobile Navigation */}
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-          </MobileNavHeader>
-
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
-          </MobileNavMenu>
-        </MobileNav>
-      </Navbar>
-
-      {/* Navbar */}
-    </div>
-  );
-}
 //mackbook scroll demo
 export function MacbookScrollDemo() {
   return (
@@ -196,7 +88,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -230,7 +124,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000} 
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -264,7 +160,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -298,7 +196,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -332,7 +232,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -366,7 +268,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -400,7 +304,9 @@ export function FollowingPointerDemo() {
       >
         <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
-            <img
+            <Image
+            width={1000}
+            height={1000}
               src={blogContent.image}
               alt="thumbnail"
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
@@ -447,7 +353,7 @@ const TitleComponent = ({
   avatar: string;
 }) => (
   <div className="flex items-center space-x-2">
-    <img
+    <Image
       src={avatar}
       height="20"
       width="20"
@@ -458,90 +364,7 @@ const TitleComponent = ({
   </div>
 );
 
-//footer
-export function Footer() {
-  return (
-    <div>
-    <div className="lg:flex lg:flex-row bg-neutral-100 dark:bg-neutral-900">
-      <div className="flex flex-col w-full max-w-7xl mx-auto">
-      <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Skills Sphere
-        </h4>
-        <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-left font-normal dark:text-neutral-300 mx-5">
-            Empowering Your Growth <br />Project of IDs Corporations
-        </p>
-      </div>
-      <div className="flex flex-col w-full max-w-7xl mt-5 mx-auto">
-        <h3 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-      Quick Links
-        </h3>
-          <ul>
-            <li>
-              <a href="/about" className="text-neutral-500 dark:text-neutral-300 mx-5">About Us</a>
-            </li>
-            <li>
-              <a href="/contact" className="text-neutral-500 dark:text-neutral-300 mx-5">Contact Us</a>
-            </li>
-            <li>
-              <a href="/courses" className="text-neutral-500 dark:text-neutral-300 mx-5">Courses</a>
-            </li>
-            <li>
-              <a href="/blogs" className="text-neutral-500 dark:text-neutral-300 mx-5">blogs</a>
-            </li>
-            <li>
-              <a href="/products" className="text-neutral-500 dark:text-neutral-300 mx-5">Products</a>
-            </li>
-            <li>
-              <a href="/hometuitions" className="text-neutral-500 dark:text-neutral-300 mx-5">Home Tuitions</a>
-            </li>
-            <li>
-              <a href="/books" className="text-neutral-500 dark:text-neutral-300 mx-5">Books</a>
-            </li>
-          </ul>
-      </div>
 
-      <div className="flex flex-col w-full max-w-7xl mt-5 mx-auto">
-        <h3 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Resources
-        </h3>
-          <ul>
-            <li>
-              <a href="/about" className="text-neutral-500 dark:text-neutral-300 mx-5">Faqs</a>
-            </li>
-            <li>
-              <a href="/contact" className="text-neutral-500 dark:text-neutral-300 mx-5">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/courses" className="text-neutral-500 dark:text-neutral-300 mx-5">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="/blogs" className="text-neutral-500 dark:text-neutral-300 mx-5">Support</a>
-            </li>
-            <li>
-              <a href="/products" className="text-neutral-500 dark:text-neutral-300 mx-5">Become a tutor</a>
-            </li>
-          </ul>
-      </div>
-      <div className="flex flex-col w-full max-w-7xl mx-auto">
-      <h4 className="text-2xl lg:text-3xl lg:leading-tight max-w-xl text-left tracking-tight font-medium text-black dark:text-white mt-10 mx-5">
-          Contact info
-        </h4>
-        <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-left font-normal dark:text-neutral-300 mx-5">
-           Email: sillzsphere@gmail.com<br />
-           Phone: +92 3706777957<br />
-           Address: PCSIR Phase 1, Lahore
-        </p>
-      </div>
-    </div>
-    <div>
-      <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-center font-normal dark:text-neutral-300 mxauto">
-        © 2023 Skills Sphere. All rights reserved.
-      </p>
-    </div>
-    </div>
-  );
-}
-//footerend
 //calling components
 export default function CoursesPage() {
   return (
