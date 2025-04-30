@@ -76,7 +76,7 @@ export function Footer() {
       </div>
     </div>
     <div>
-      <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-center font-normal dark:text-neutral-300 mxauto">
+      <p className="text-sm lg:text-base  max-w-2xl text-neutral-500 text-center font-normal dark:text-neutral-300 mx-auto">
         © 2023 Skills Sphere. All rights reserved.
       </p>
     </div>

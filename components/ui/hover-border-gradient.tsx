@@ -1,29 +1,29 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
-
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 
+interface HoverBorderGradientProps extends React.HTMLAttributes<HTMLElement> {
+  as?: React.ElementType; // Allow any valid HTML element or React component
+  containerClassName?: string;
+  href?: string;
+  className?: string;
+  duration?: number;
+  clockwise?: boolean;
+  children: React.ReactNode; // Explicitly type children to accept any valid React nodes
+}
+
 export function HoverBorderGradient({
   children,
   containerClassName,
   className,
-  as: Tag = "button",
+  as: Tag = "a",
   duration = 1,
   clockwise = true,
   ...props
-}: React.PropsWithChildren<
-  {
-    as?: React.ElementType;
-    containerClassName?: string;
-    href?: string;
-    className?: string;
-    duration?: number;
-    clockwise?: boolean;
-  } & React.HTMLAttributes<HTMLElement>
->) {
+}: HoverBorderGradientProps) {
   const [hovered, setHovered] = useState<boolean>(false);
   const [direction, setDirection] = useState<Direction>("TOP");
 
@@ -61,13 +61,15 @@ export function HoverBorderGradient({
   }, [hovered, duration, rotateDirection]);
 
   return (
-    <Tag
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className={cn(
-        "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
-        containerClassName
-      )}
+    <a
+      {...(typeof Tag === 'string' ? {
+        onMouseEnter: () => setHovered(true),
+        onMouseLeave: () => setHovered(false),
+        className: cn(
+          "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+          containerClassName
+        )
+      } : {})}
       {...props}
     >
       <div
@@ -97,6 +99,6 @@ export function HoverBorderGradient({
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
       <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
-    </Tag>
+    </a>
   );
 }
