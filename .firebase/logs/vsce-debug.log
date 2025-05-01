@@ -371,3 +371,37 @@ Generated sources: esm\package.json [17B] index.cjs.js [153B] package.json [860B
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0501 13:09:50.968098    9700 load.go:115] Finished reloading\n"}}
 [debug] [2025-05-01T08:09:51.108Z] I0501 13:09:51.108370    9700 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0501 13:09:51.108370    9700 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-01T09:03:07.287Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2025-05-01T09:03:07.289Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-01T09:03:07.325Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-01T09:03:07.326Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-05-01T09:03:07.331Z] Checked if tokens are valid: false, expires at: 1746090575273
+[debug] [2025-05-01T09:03:07.332Z] Checked if tokens are valid: false, expires at: 1746090575273
+[debug] [2025-05-01T09:03:07.335Z] > refreshing access token with scopes: []
+[debug] [2025-05-01T09:03:07.339Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-01T09:03:07.340Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T09:03:07.356Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2025-05-01T09:03:07.358Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-01T09:03:07.364Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-01T09:03:07.368Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-05-01T09:03:07.371Z] Checked if tokens are valid: false, expires at: 1746090575273
+[debug] [2025-05-01T09:03:07.372Z] Checked if tokens are valid: false, expires at: 1746090575273
+[debug] [2025-05-01T09:03:07.373Z] > refreshing access token with scopes: []
+[debug] [2025-05-01T09:03:07.378Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-01T09:03:07.380Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T09:03:07.823Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-05-01T09:03:07.824Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T09:03:07.870Z] [Firebase Plugin] User found:  ibrahimzdilshad@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-01T09:03:07.874Z] Checked if tokens are valid: true, expires at: 1746093786825
+[debug] [2025-05-01T09:03:07.876Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-01T09:03:07.888Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-05-01T09:03:07.889Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T09:03:07.929Z] [Firebase Plugin] User found:  ibrahimzdilshad@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-01T09:03:07.933Z] Checked if tokens are valid: true, expires at: 1746093786890
+[debug] [2025-05-01T09:03:07.935Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-01T09:03:08.654Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-01T09:03:08.655Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-01T09:03:09.158Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-01T09:03:09.159Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
