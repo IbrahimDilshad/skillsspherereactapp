@@ -599,3 +599,7 @@ Generated sources: react\esm\package.json [17B] react\esm\index.esm.js [0B] reac
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:17.325652    2420 collector.go:107] connector \"default\" javascriptSdk wrote into \"d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: react\\esm\\package.json [17B] react\\esm\\index.esm.js [0B] react\\README.md [5417B] esm\\index.esm.js [118B] esm\\package.json [17B] package.json [860B] react\\index.d.ts [228B] react\\package.json [468B] index.d.ts [246B] index.cjs.js [153B] README.md [2774B] react\\index.cjs.js [0B] \n"}}
 [debug] [2025-05-02T20:42:17.476Z] I0503 01:42:17.475621    2420 installsdk.go:80] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:17.475621    2420 installsdk.go:80] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2025-05-02T20:42:29.679Z] I0503 01:42:29.677725    2420 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:29.677725    2420 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-02T20:42:29.717Z] I0503 01:42:29.717160    2420 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:29.717160    2420 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
