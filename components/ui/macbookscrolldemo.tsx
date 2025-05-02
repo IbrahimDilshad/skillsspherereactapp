@@ -6,10 +6,10 @@ import Link from "next/link";
 export function MacbookScrollDemo() {
   return (
     
-    <div className="overflow-hidden dark:bg-transparent bg-white lg:w-full sm:w-full">
+    <div className="overflow-hidden dark:bg-transparent bg-white">
       <MacbookScroll
         title={
-          <span>
+          <span className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white mt-0">
             Premium Courses Designed For Your Growth <br/> Start Today!
           </span>
         }

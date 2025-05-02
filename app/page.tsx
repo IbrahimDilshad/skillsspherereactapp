@@ -9,6 +9,7 @@ import React from "react";
 import { TabsDemo } from "@/components/ui/ourpopulars";
 import { InfiniteMovingCardsDemo } from "@/components/ui/testimonials";
 import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
+import  Chatbot  from "@/components/ui/chatbot";
 
 
 
@@ -23,6 +24,7 @@ import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
   export default function App() {
     return (
       <div>
+        <Chatbot/>
         <NavbarDemo/>
         <FeaturesSectionDemo1/>
         <AppleCardsCarouselDemo/>

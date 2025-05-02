@@ -75,11 +75,11 @@ export const MacbookScroll = ({
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white"
+        className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white mt-0"
       >
         {title || (
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+            <h1>This Macbook is built with Tailwindcss. <br /> No kidding.</h1>
           </span>
         )}
       </motion.h2>
