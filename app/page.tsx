@@ -20,12 +20,14 @@ import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
 
 
 
+
 //calling components
   export default function App() {
     return (
       <div>
         
         <NavbarDemo/>
+        
         <FeaturesSectionDemo1/>
         <AppleCardsCarouselDemo/>
         <FeaturesSectionDemo/>
