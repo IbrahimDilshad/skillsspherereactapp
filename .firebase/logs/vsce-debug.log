@@ -500,3 +500,17 @@ Generated sources: package.json [860B] react\index.cjs.js [0B] README.md [2774B]
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0502 13:26:53.720798    8652 load.go:115] Finished reloading\n"}}
 [debug] [2025-05-02T08:26:53.874Z] I0502 13:26:53.872981    8652 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0502 13:26:53.872981    8652 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[warn] !  dataconnect: Fatal error occurred: 
+   Data Connect Emulator has exited with code: 1, 
+   stopping all running emulators {"metadata":{"emulator":{"name":"dataconnect"},"message":"Fatal error occurred: \n   Data Connect Emulator has exited with code: 1, \n   stopping all running emulators"}}
+[debug] [2025-05-02T17:30:54.469Z] [Firebase Plugin] Activating Firebase extension.
+[info] [Firebase Plugin] Checked firebase-tools, is up to date!
+[debug] [2025-05-02T17:31:03.658Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-02T17:31:03.662Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-02T17:31:03.663Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-05-02T17:31:03.668Z] Checked if tokens are valid: false, expires at: 1746178002496
+[debug] [2025-05-02T17:31:03.669Z] Checked if tokens are valid: false, expires at: 1746178002496
+[debug] [2025-05-02T17:31:03.670Z] > refreshing access token with scopes: []
+[debug] [2025-05-02T17:31:03.672Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-02T17:31:03.672Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-02T17:31:03.760Z] [Firebase Plugin] VSCode notification server listening on port 40001
