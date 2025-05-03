@@ -603,3 +603,14 @@ Generated sources: react\esm\package.json [17B] react\esm\index.esm.js [0B] reac
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:29.677725    2420 load.go:115] Finished reloading\n"}}
 [debug] [2025-05-02T20:42:29.717Z] I0503 01:42:29.717160    2420 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0503 01:42:29.717160    2420 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-03T10:13:53.116Z] [Firebase Plugin] Activating Firebase extension.
+[info] [Firebase Plugin] Checked firebase-tools, is up to date!
+[debug] [2025-05-03T10:14:09.627Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-03T10:14:09.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T10:14:09.632Z] > authorizing via signed-in user (ibrahimzdilshad@gmail.com)
+[debug] [2025-05-03T10:14:09.636Z] Checked if tokens are valid: false, expires at: 1746222134761
+[debug] [2025-05-03T10:14:09.637Z] Checked if tokens are valid: false, expires at: 1746222134761
+[debug] [2025-05-03T10:14:09.637Z] > refreshing access token with scopes: []
+[debug] [2025-05-03T10:14:09.640Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-03T10:14:09.641Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-03T10:14:09.659Z] [Firebase Plugin] VSCode notification server listening on port 40001
