@@ -791,3 +791,9 @@ Generated sources: react\package.json [468B] react\esm\index.esm.js [0B] react\R
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0507 21:11:44.791402   12156 collector.go:107] connector \"default\" javascriptSdk wrote into \"d:\\\\ibrahimdilshad\\\\ibrahim-dilshad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: react\\package.json [468B] react\\esm\\index.esm.js [0B] react\\README.md [5417B] index.d.ts [246B] esm\\package.json [17B] package.json [860B] react\\index.d.ts [228B] react\\index.cjs.js [0B] esm\\index.esm.js [118B] index.cjs.js [153B] README.md [2774B] react\\esm\\package.json [17B] \n"}}
 [debug] [2025-05-07T16:11:44.957Z] I0507 21:11:44.957370   12156 installsdk.go:80] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0507 21:11:44.957370   12156 installsdk.go:80] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2025-05-07T16:11:54.884Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-07T16:11:54.884Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-07T16:12:01.441Z] I0507 21:12:01.441762   12156 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0507 21:12:01.441762   12156 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-07T16:12:01.504Z] I0507 21:12:01.503877   12156 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0507 21:12:01.503877   12156 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
