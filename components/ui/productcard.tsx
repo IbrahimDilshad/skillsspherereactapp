@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
-
+import Image from "next/image";
 export function BackgroundGradientDemo() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
       {/* Card 1 */}
       <BackgroundGradient className="rounded-[22px] w-full p-4 sm:p-6 bg-white dark:bg-zinc-900 relative overflow-hidden">
-        <img
+        <Image
           src={`/jordans.webp`}
           alt="jordans"
           height="400"
@@ -32,7 +32,7 @@ export function BackgroundGradientDemo() {
 
       {/* Card 2 */}
       <BackgroundGradient className="rounded-[22px] w-full p-4 sm:p-6 bg-white dark:bg-zinc-900 relative overflow-hidden">
-        <img
+        <Image
           src={`/jordans.webp`}
           alt="jordans"
           height="400"
