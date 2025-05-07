@@ -9,7 +9,7 @@ import React from "react";
 import { TabsDemo } from "@/components/ui/ourpopulars";
 import { InfiniteMovingCardsDemo } from "@/components/ui/testimonials";
 import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
-
+import TawkChat from "@/components/ui/chatbot";
 
 
 
@@ -27,7 +27,7 @@ import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
       <div>
         
         <NavbarDemo/>
-        
+        <TawkChat/>
         <FeaturesSectionDemo1/>
         <AppleCardsCarouselDemo/>
         <FeaturesSectionDemo/>

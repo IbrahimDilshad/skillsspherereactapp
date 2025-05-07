@@ -1,7 +1,8 @@
 "use client";
 import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { Footer } from "@/components/ui/footer";
-
+import { ExpandableCardDemo } from "@/components/ui/hometutorcards";
+import { CoverDemo } from "@/components/ui/headerhometuitions";
 
 
 
@@ -10,7 +11,8 @@ import { Footer } from "@/components/ui/footer";
     return (
       <div>
         <NavbarDemo/>
-        
+        <CoverDemo/>
+        <ExpandableCardDemo/>
         <Footer/>
       </div>
     )
