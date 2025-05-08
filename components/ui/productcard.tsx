@@ -8,7 +8,7 @@ export function BackgroundGradientDemo() {
       {/* Card 1 */}
       <BackgroundGradient className="rounded-[22px] w-full p-4 sm:p-6 bg-white dark:bg-zinc-900 relative overflow-hidden">
         <Image
-          src={`/jordans.webp`}
+          src={`/images/stamp logo.png`}
           alt="jordans"
           height="400"
           width="400"
@@ -33,7 +33,7 @@ export function BackgroundGradientDemo() {
       {/* Card 2 */}
       <BackgroundGradient className="rounded-[22px] w-full p-4 sm:p-6 bg-white dark:bg-zinc-900 relative overflow-hidden">
         <Image
-          src={`/jordans.webp`}
+          src={`/images/stamp logo.png`}
           alt="jordans"
           height="400"
           width="400"
