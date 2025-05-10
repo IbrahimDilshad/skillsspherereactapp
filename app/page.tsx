@@ -11,16 +11,6 @@ import { InfiniteMovingCardsDemo } from "@/components/ui/testimonials";
 import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
 import TawkChat from "@/components/ui/chatbot";
 
-
-
-
-
-
-
-
-
-
-
 //calling components
   export default function App() {
     return (

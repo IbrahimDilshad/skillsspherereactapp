@@ -204,7 +204,7 @@ const cards = [
   {
     description: "Lana Del Rey",
     title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "/images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -227,7 +227,7 @@ const cards = [
   {
     description: "Babbu Maan",
     title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    src: "/images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -250,7 +250,7 @@ const cards = [
   {
     description: "Metallica",
     title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    src: "/images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -272,7 +272,7 @@ const cards = [
   {
     description: "Lord Himesh",
     title: "sample 3",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    src: "/images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -294,7 +294,7 @@ const cards = [
   {
     description: "Lord Himesh",
     title: "sample 2",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    src: "/Images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -316,7 +316,7 @@ const cards = [
   {
     description: "Lord Himesh",
     title: "sample",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    src: "/images/stamp logo.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {

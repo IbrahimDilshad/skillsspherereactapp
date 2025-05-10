@@ -1,17 +1,19 @@
 "use client";
 import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { Footer } from "@/components/ui/footer";
+import { ExpandableCardDemo } from "@/components/ui/hometutorcards";
+import { CoverDemo } from "@/components/ui/headerhometuitions";
 
 
+export default function hometuition() {
+ 
 
-
-//calling components
-  export default function hometuition() {
-    return (
-      <div>
-        <NavbarDemo/>
-        
-        <Footer/>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <NavbarDemo />
+      <CoverDemo />
+      <ExpandableCardDemo />
+      <Footer />
+    </div>
+  );
+}
