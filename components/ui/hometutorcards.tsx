@@ -66,11 +66,11 @@ export function ExpandableCardDemo() {
   return (
     <>
       {/* Search bar */}
-      <div className="p-4">
+      <div className="p-4 flex justify-center items-center">
         <input
           type="text"
           placeholder="Search by name, subject, location..."
-          className="p-2 rounded-md border border-gray-300 dark:border-gray-600 w-full"
+          className="p-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 placeholder-neutral-500 dark:placeholder-neutral-400 w-full max-w-md"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
