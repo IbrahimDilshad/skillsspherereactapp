@@ -1,7 +1,7 @@
 "use client";
 import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { Footer } from "@/components/ui/footer";
-import  ContactForm  from "@/components/ui/conactfor";
+
 
 
 
@@ -15,7 +15,7 @@ import  ContactForm  from "@/components/ui/conactfor";
     return (
       <div>
         <NavbarDemo/>
-        <ContactForm/>
+       
         <Footer/>
       </div>
     )
