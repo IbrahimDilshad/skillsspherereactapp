@@ -3,7 +3,7 @@
 import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { MacbookScrollDemo } from "@/components/ui/macbookscrolldemo";
 import { Footer } from "@/components/ui/footer";
-import { FollowingPointerDemo } from "@/components/ui/fallowingpointerDemo";
+import { SearchBarDemo } from "@/components/ui/fallowingpointerDemo";
 
 
 
@@ -14,7 +14,7 @@ export default function CoursesPage() {
     <div className="relative w-full">
       <NavbarDemo />
       <MacbookScrollDemo />
-      <FollowingPointerDemo />
+      <SearchBarDemo />
       <Footer />
     </div>
   );
