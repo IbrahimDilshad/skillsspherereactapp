@@ -10,12 +10,13 @@ import { TabsDemo } from "@/components/ui/ourpopulars";
 import { InfiniteMovingCardsDemo } from "@/components/ui/testimonials";
 import { AppleCardsCarouselDemo } from "@/components/ui/applescrolldemo";
 import TawkChat from "@/components/ui/chatbot";
+import { StickyBannerDemo } from "@/components/ui/banner";
 
 //calling components
   export default function App() {
     return (
       <div>
-        
+        <StickyBannerDemo/>
         <NavbarDemo/>
         <TawkChat/>
         <FeaturesSectionDemo1/>
