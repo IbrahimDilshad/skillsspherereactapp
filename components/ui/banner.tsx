@@ -3,7 +3,7 @@ import { StickyBanner } from "@/components/ui/sticky-banner";
 export function StickyBannerDemo() {
   return (
     <div className="relative flex w-full flex-col overflow-y-auto">
-      <StickyBanner className="bg-gradient-to-b from-blue-500 to-blue-600">
+      <StickyBanner className="bg-neutral-900">
         <p className="mx-0 max-w-[90%] text-white drop-shadow-md">
           Teach online or in-person. Your tutor journey starts here!{" "}
           <a href="/tutorform" className="transition duration-200 hover:underline">

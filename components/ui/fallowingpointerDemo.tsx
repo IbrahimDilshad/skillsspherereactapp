@@ -70,7 +70,7 @@ export function SearchBarDemo() {
   )
 
   return (
-    <div className="w-full px-4 py-10">
+    <div className="w-full px-4 py-10 bg-neutral-900">
       {/* Search Bar */}
       <div className="max-w-md mx-auto mb-6">
         <Input
@@ -78,7 +78,7 @@ export function SearchBarDemo() {
           placeholder="Search by title or description..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="rounded-full border border-gray-300 focus:ring-2 focus:ring-blue-500"
+          className="rounded-full border border-neutral-700 bg-neutral-900 text-neutral-200 placeholder-neutral-400 focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -94,8 +94,8 @@ export function SearchBarDemo() {
                 />
               }
             >
-              <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-100 bg-white transition duration-200 hover:shadow-xl">
-                <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-100">
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 transition duration-200 hover:shadow-xl">
+                <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-neutral-800">
                   <Image
                     width={1000}
                     height={1000}
@@ -105,14 +105,14 @@ export function SearchBarDemo() {
                   />
                 </div>
                 <div className="p-4">
-                  <h2 className="my-2 text-lg font-bold text-zinc-700">
+                  <h2 className="my-2 text-lg font-bold text-neutral-100">
                     {course.title}
                   </h2>
-                  <p className="mb-4 text-sm font-normal text-zinc-500">
+                  <p className="mb-4 text-sm font-normal text-neutral-400">
                     {course.description}
                   </p>
                   <div className="mt-6 flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
+                    <span className="text-sm text-neutral-400">
                       {course.date}
                     </span>
                     <div className="z-10 rounded-xl bg-black px-6 py-2 text-xs font-bold text-white">

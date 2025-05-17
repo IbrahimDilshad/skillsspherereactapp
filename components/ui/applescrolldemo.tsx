@@ -9,8 +9,8 @@ export function AppleCardsCarouselDemo() {
   ));
  
   return (
-    <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+    <div className="w-full h-full py-20 bg-neutral-900">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
         Get to know your iSad.
       </h2>
       <Carousel items={cards} />
@@ -25,10 +25,10 @@ const DummyContent = () => {
         return (
           <div
             key={"dummy-content" + index}
-            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+            className="bg-neutral-900 p-8 md:p-14 rounded-3xl mb-4"
           >
-            <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700">
+            <p className="text-neutral-200 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+              <span className="font-bold text-white">
                 The first rule of Apple club is that you boast about Apple club.
               </span>{" "}
               Keep a journal, quickly jot down a grocery list, and take amazing
@@ -49,7 +49,7 @@ const DummyContent = () => {
     </>
   );
 };
- 
+
 const data = [
   {
     category: "Artificial Intelligence",
@@ -69,7 +69,7 @@ const data = [
     src:  "/images/stamp logo.png",
     content: <DummyContent />,
   },
- 
+
   {
     category: "Product",
     title: "Maps for your iPhone 15 Pro Max.",

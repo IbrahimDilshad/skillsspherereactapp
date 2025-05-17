@@ -18,7 +18,7 @@ export const FollowerPointerCard = ({
   const y = useMotionValue(0);
   const ref = React.useRef<HTMLDivElement>(null);
   const [rect, setRect] = useState<DOMRect | null>(null);
-  const [isInside, setIsInside] = useState<boolean>(false); // Add this line
+  const [isInside, setIsInside] = useState<boolean>(false);
 
   useEffect(() => {
     if (ref.current) {
@@ -113,7 +113,7 @@ export const FollowPointer = ({
       </svg>
       <motion.div
         style={{
-          backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+          backgroundColor: "#18181b", // always dark
         }}
         initial={{
           scale: 0.5,
@@ -128,7 +128,7 @@ export const FollowPointer = ({
           opacity: 0,
         }}
         className={
-          "min-w-max rounded-full bg-neutral-200 px-2 py-2 text-xs whitespace-nowrap text-white"
+          "min-w-max rounded-full px-2 py-2 text-xs whitespace-nowrap text-white"
         }
       >
         {title || `William Shakespeare`}

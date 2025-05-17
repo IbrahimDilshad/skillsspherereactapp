@@ -13,7 +13,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 py-0 bg-gradient-to-br from-gray-300 to-white-500 bg-clip-text text-center font-medium tracking-tight text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+        className="mt-8 py-0 bg-gradient-to-br from-white to-neutral-300 bg-clip-text text-center font-medium tracking-tight text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
       >
         Wisdom Begins In <br /> A Wounder
       </motion.h1>

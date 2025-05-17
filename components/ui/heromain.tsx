@@ -18,17 +18,17 @@ export function FeaturesSectionDemo1() {
     return (
       <div className="relative z-20 py-10 mx-w-7xl mx-auto lg:col-span-3 lg:flex lg:flex-row items-start ">
         <div className="px-8 flex-1 lg:mt-40">
-          <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-xl mx-auto text-left tracking-tight font-medium text-black dark:text-white">
+          <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-xl mx-auto text-left tracking-tight font-medium text-white">
             Empowering you with the skills of tomarrow
           </h4>
   
-          <p className="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-500 text-left font-normal dark:text-neutral-300">
+          <p className="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-300 text-left font-normal">
            From creative design to cutting edge Development.
           Skills Sphere offers premium Courses, E-books, Products,
            and Expert-led training to help you grow faster and smarter. Your Success starts here.
           </p>
   
-          <p className ="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-500 text-left font-normal dark:text-">
+          <p className ="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-300 text-left font-normal">
             Explore our courses and ebooks to unlock your potential.
           </p>
         <div className="px-8 flex flex-row gap-5 mt-5">
@@ -36,7 +36,7 @@ export function FeaturesSectionDemo1() {
           containerClassName="rounded-full"
           as="a"
           href="/courses"
-          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+          className="bg-black text-white flex items-center space-x-2"
         >
           
           <span>Courses</span>
@@ -45,21 +45,18 @@ export function FeaturesSectionDemo1() {
           containerClassName="rounded-full"
           as="a"
           href="/books"
-          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+          className="bg-black text-white flex items-center space-x-2"
         >
           
           <span>Ebooks</span>
         </HoverBorderGradient>
         
         
-        
         </div>
-        <p className ="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-500 text-left font-normal dark:text-">
+        <p className ="px-8 text-sm lg:text-base  max-w-2xl  my-4 text-neutral-300 text-left font-normal">
             Confused? Contact on <a className="text-cyan-500" href="">Whatsapp </a> OR <a className="text-cyan-500" href="">Email </a>  to get a free consultation.
           </p>
         </div>
-  
-        
   
         <div className="relative flex-1">
           <div className="grid grid-cols-1 lg:grid-cols-7">
@@ -92,7 +89,7 @@ export function FeaturesSectionDemo1() {
   //hero content globe etc
   const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
     return (
-      <p className=" max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+      <p className=" max-w-5xl mx-auto text-left tracking-tight text-white text-xl md:text-2xl md:leading-snug">
         {children}
       </p>
     );
@@ -104,7 +101,7 @@ export function FeaturesSectionDemo1() {
       <p
         className={cn(
           "text-sm md:text-base  max-w-4xl text-left mx-auto",
-          "text-neutral-500 text-center font-normal dark:text-neutral-300",
+          "text-neutral-300 text-center font-normal",
           "text-left max-w-sm mx-0 md:text-sm my-2"
         )}
       >
@@ -116,7 +113,7 @@ export function FeaturesSectionDemo1() {
   //skeleton
   export const SkeletonTwo = () => {
     return (
-      <div className="h-[500px] md:h-[600px]  flex flex-col items-center relative bg-transparent dark:bg-transparent">
+      <div className="h-[500px] md:h-[600px]  flex flex-col items-center relative bg-transparent">
         <Globe className="absolute -right-10 md:-right-10 -bottom-30 md:-bottom-30" />
       </div>
     );

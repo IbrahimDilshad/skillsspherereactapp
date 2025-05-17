@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full bg-neutral-900",
           containerClassName
         )}
       >
@@ -52,7 +52,10 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
+            className={cn(
+              "relative px-4 py-2 rounded-full text-white",
+              tabClassName
+            )}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,15 +65,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
+                  "absolute inset-0 bg-neutral-800 rounded-full",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
-              {tab.title}
-            </span>
+            <span className="relative block text-white">{tab.title}</span>
           </button>
         ))}
       </div>

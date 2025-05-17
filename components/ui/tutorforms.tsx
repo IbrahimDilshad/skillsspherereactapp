@@ -59,7 +59,7 @@ export function TutorOnboardingForm() {
               id="teachingmode"
               name="Teaching Mode"
               required
-              className="p-3 rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200"
+              className="p-3 rounded-md border border-neutral-700 bg-neutral-900 text-neutral-200"
             >
               <option value="">Select mode</option>
               <option value="Online">Online</option>

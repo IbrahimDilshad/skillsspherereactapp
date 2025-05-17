@@ -3,23 +3,23 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 //testimonial
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased dark:transparent dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-neutral-900 items-center justify-center relative overflow-hidden">
       <div>
-      <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mb-5">
-        What our customers say.
-      </h2>
+        <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-white font-sans mb-5">
+          What our customers say.
+        </h2>
       </div>
-    <div className="h-[20rem] rounded-md flex flex-col antialiased dark:transparent dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+      <div className="h-[20rem] rounded-md flex flex-col antialiased bg-neutral-900 items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
     </div>
   );
 }
- 
+
 const testimonials = [
   {
     quote:

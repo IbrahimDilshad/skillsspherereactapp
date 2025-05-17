@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 
 interface HoverBorderGradientProps extends React.HTMLAttributes<HTMLElement> {
-  as?: React.ElementType; // Allow any valid HTML element or React component
+  as?: React.ElementType;
   containerClassName?: string;
   href?: string;
   className?: string;
   duration?: number;
   clockwise?: boolean;
-  children: React.ReactNode; // Explicitly type children to accept any valid React nodes
+  children: React.ReactNode;
 }
 
 export function HoverBorderGradient({
@@ -66,7 +66,7 @@ export function HoverBorderGradient({
         onMouseEnter: () => setHovered(true),
         onMouseLeave: () => setHovered(false),
         className: cn(
-          "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+          "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
           containerClassName
         )
       } : {})}

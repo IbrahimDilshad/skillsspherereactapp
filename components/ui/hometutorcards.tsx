@@ -70,7 +70,7 @@ export function ExpandableCardDemo() {
         <input
           type="text"
           placeholder="Search by name, subject, location..."
-          className="p-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 placeholder-neutral-500 dark:placeholder-neutral-400 w-full max-w-md"
+          className="p-3 rounded-full border border-neutral-700 bg-neutral-900 text-neutral-200 placeholder-neutral-400 w-full max-w-md"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -96,7 +96,7 @@ export function ExpandableCardDemo() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0, transition: { duration: 0.05 } }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-neutral-900 rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -105,7 +105,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active?.title}-${id.current}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id.current}`}>
                 <Image
@@ -122,13 +122,13 @@ export function ExpandableCardDemo() {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id.current}`}
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                      className="font-medium text-neutral-200 text-base"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id.current}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-base"
+                      className="text-neutral-400 text-base"
                     >
                       {active.description}
                     </motion.p>
@@ -158,7 +158,7 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id.current}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id.current}`}>
@@ -173,13 +173,13 @@ export function ExpandableCardDemo() {
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id.current}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                  className="font-medium text-neutral-200 text-center md:text-left text-base"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id.current}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-neutral-400 text-center md:text-left text-base"
                 >
                   {card.description}
                 </motion.p>

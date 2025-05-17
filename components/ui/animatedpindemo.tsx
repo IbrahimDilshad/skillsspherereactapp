@@ -51,7 +51,7 @@ export function AnimatedPinDemo() {
           placeholder="Search for books..."
           value={searchTerm}
           onChange={handleSearch}
-          className="p-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 placeholder-neutral-500 dark:placeholder-neutral-400 w-full max-w-md"
+          className="p-3 rounded-full border border-neutral-700 bg-neutral-900 text-neutral-200 placeholder-neutral-400 w-full max-w-md"
         />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">

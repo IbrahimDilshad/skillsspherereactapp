@@ -15,7 +15,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 sm:py-0 lg:py-2 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-8 bg-gradient-to-br from-white to-neutral-300 sm:py-0 lg:py-2 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Build lamps <br /> the right way
       </motion.h1>
@@ -75,9 +75,9 @@ export const LampContainer = ({
         </motion.div>
 
         {/* Lamp Glow */}
-        <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-transparent blur-xl opacity-20"></div> {/* Reduced blur and opacity */}
-        <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-5 backdrop-blur-md"></div> {/* Reduced opacity */}
-        <div className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-white opacity-30 blur-2xl"></div> {/* Reduced opacity */}
+        <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-transparent blur-xl opacity-20"></div>
+        <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-5 backdrop-blur-md"></div>
+        <div className="absolute inset-auto z-50 h-36 w-[28rem] -translate-y-1/2 rounded-full bg-white opacity-30 blur-2xl"></div>
         <motion.div
           initial={{ width: "8rem" }}
           whileInView={{ width: "16rem" }}

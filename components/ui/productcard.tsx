@@ -37,7 +37,7 @@ export function BackgroundGradientDemo() {
         <input
           type="text"
           placeholder="Search products..."
-          className="p-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 placeholder-neutral-500 dark:placeholder-neutral-400 w-full max-w-md"
+          className="p-3 rounded-full border border-neutral-700 bg-neutral-900 text-neutral-200 placeholder-neutral-400 w-full max-w-md"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -48,7 +48,7 @@ export function BackgroundGradientDemo() {
         {filteredProducts.map((product, index) => (
           <BackgroundGradient
             key={index}
-            className="rounded-[22px] w-full p-4 sm:p-6 bg-white dark:bg-zinc-900 relative overflow-hidden"
+            className="rounded-[22px] w-full p-4 sm:p-6 bg-neutral-900 relative overflow-hidden"
           >
             <Image
               src={product.image}
@@ -57,13 +57,13 @@ export function BackgroundGradientDemo() {
               width={400}
               className="object-contain w-full h-auto"
             />
-            <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+            <p className="text-base sm:text-xl text-white mt-4 mb-2">
               {product.title}
             </p>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="text-sm text-neutral-400">
               {product.description}
             </p>
-            <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+            <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold">
               <span>Buy now </span>
               <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
                 {product.price}
