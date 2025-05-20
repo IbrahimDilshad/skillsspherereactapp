@@ -1499,3 +1499,11 @@ Generated sources: react\package.json [468B] react\esm\package.json [17B] README
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 20:44:18.759227   22744 installsdk.go:80] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
 [debug] [2025-05-20T15:44:18.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
 [debug] [2025-05-20T15:44:18.969Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-20T15:44:27.446Z] E0520 20:44:27.445883   22744 installsdk.go:82] Failed to install package: exit status 0xc000013a
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0520 20:44:27.445883   22744 installsdk.go:82] Failed to install package: exit status 0xc000013a\n"}}
+[debug] [2025-05-20T15:44:27.447Z] I0520 20:44:27.445883   22744 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 20:44:27.445883   22744 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-20T15:44:27.623Z] I0520 20:44:27.621555   22744 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 20:44:27.621555   22744 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-20T15:44:27.756Z] I0520 20:44:27.755763   22744 engine.go:170] [/emulator/ibrahim-dilshad 2ecc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0520 20:44:27.755763   22744 engine.go:170] [/emulator/ibrahim-dilshad 2ecc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
