@@ -57,7 +57,7 @@ export function MultiStepLoaderDemo() {
      </div>
      
       {/* Core Loader Modal */}
-      <Loader loadingStates={loadingStates} loading={loading} duration={2000} />
+      <Loader loadingStates={loadingStates} loading={loading} duration={1000} />
  
       {/* The buttons are for demo only, remove it in your actual code ⬇️ */}
      

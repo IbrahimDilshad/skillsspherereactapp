@@ -9,7 +9,7 @@ import Image from "next/image";
 const tutorCards = [
   {
     title: "John Doe",
-    description: "Math tutor with 5 years of experience.",
+    description: "Math tutor with 5 years of experienceMath tutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experience",
     location: "New York",
     subject: "Math",
     area: "Manhattan",
