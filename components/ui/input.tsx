@@ -9,7 +9,7 @@ export interface InputProps
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
-    const radius = 100; // change this to increase the rdaius of the hover effect
+    const radius = 200; // change this to increase the rdaius of the hover effect
     const [visible, setVisible] = React.useState(false);
 
     let mouseX = useMotionValue(0);
@@ -44,7 +44,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     group-hover/input:shadow-none
     file:border-0 file:bg-transparent file:text-sm file:font-medium
     placeholder:text-neutral-400
-    focus-visible:ring-2 focus-visible:ring-white focus-visible:border-gray-200 focus-visible:outline-none
+    focus-visible:ring-0 focus-visible:border-gray-200 focus-visible:outline-none
     hover:border-gray-200`,
             className,
           )}
