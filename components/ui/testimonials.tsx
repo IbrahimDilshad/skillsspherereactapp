@@ -3,13 +3,13 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 //testimonial
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-neutral-900 items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
       <div>
         <h2 className="max-w-7xl mx-auto text-xl md:text-5xl font-bold text-white font-sans mb-5">
           What our customers say.
         </h2>
       </div>
-      <div className="h-[20rem] rounded-md flex flex-col antialiased bg-neutral-900 items-center justify-center relative overflow-hidden">
+      <div className="h-[20rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
