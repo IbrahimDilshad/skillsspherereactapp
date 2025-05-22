@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export function TutorOnboardingForm() {
   return (
-    <div className="shadow-input mx-auto w-full max-w-xl rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+    <div className="shadow-input mx-auto w-full max-w-xl rounded-none bg-transparent p-4 md:rounded-2xl md:p-8 dark:bg-black">
       <h2 className="text-2xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">
         Skills Sphere - Tutor Onboarding
       </h2>
