@@ -5,15 +5,13 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence, useMotionValue } from "motion/react";
 import { cn } from "@/lib/utils";
 
-export const FollowerPointerCard = ({
-  children,
-  className,
-  title,
+export function FollowerPointerCard({
+  children, className, title,
 }: {
   children: React.ReactNode;
   className?: string;
   title?: string | React.ReactNode;
-}) => {
+}) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const ref = React.useRef<HTMLDivElement>(null);
@@ -58,7 +56,7 @@ export const FollowerPointerCard = ({
       {children}
     </div>
   );
-};
+}
 
 export const FollowPointer = ({
   x,
