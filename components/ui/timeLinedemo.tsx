@@ -148,7 +148,7 @@ export function TimelineDemo() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip bg-neutral-900">
+    <div className="relative w-full overflow-clip bg-transparent">
       <Timeline data={data} />
     </div>
   );

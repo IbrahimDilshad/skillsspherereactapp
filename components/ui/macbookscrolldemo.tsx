@@ -5,7 +5,7 @@ import Link from "next/link";
 //mackbook scroll demo
 export function MacbookScrollDemo() {
   return (
-    <div className="overflow-hidden bg-neutral-900">
+    <div className="overflow-hidden bg-transparent">
       <MacbookScroll
         title={
           <span className="mb-20 text-center text-3xl font-bold text-white mt-0">

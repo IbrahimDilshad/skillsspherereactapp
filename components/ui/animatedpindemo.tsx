@@ -20,13 +20,13 @@ export function AnimatedPinDemo() {
     {
       title: "Aceternity UI 2",
       description: "Advanced Tailwind CSS and Framer Motion Components.",
-      href: "https://twitter.com/mannupaaji",
+      href: "#",
       imageSrc: "/images/stamp logo.png",
     },
     {
       title: "NextGen UI",
       description: "Tailwind CSS components with next-gen animations.",
-      href: "https://skillssphere.site",
+      href: "#",
       imageSrc: "/images/stamp logo.png",
     },
     {
@@ -51,17 +51,27 @@ export function AnimatedPinDemo() {
           placeholder="Search for books..."
           value={searchTerm}
           onChange={handleSearch}
-          className="p-3 rounded-full border border-neutral-700 bg-neutral-900 text-neutral-200 placeholder-neutral-400 w-full max-w-md"
+          className="p-3 rounded-full border border-neutral-700 bg-transparent text-neutral-200 placeholder-neutral-400 w-full max-w-md"
         />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
         {filteredBooks.length === 0 ? (
-          <p>No books found.</p>
+          <div className="flex flex-col items-center justify-center py-20 col-span-full">
+            <span className="text-2xl font-semibold text-neutral-400 mb-2">
+              No books found
+            </span>
+            <span className="text-sm text-neutral-500">
+              Try a different search term.
+            </span>
+          </div>
         ) : (
           filteredBooks.map((book, index) => (
-            <div key={index} className="mt-0 mb-40 mx-auto w-7xl items-center justify-center">
+            <div
+              key={index}
+              className="mt-0 mb-40 mx-auto w-7xl items-center justify-center"
+            >
               <PinContainer title="Download" href={book.href}>
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] bg-transparent">
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
                     {book.title}
                   </h3>
