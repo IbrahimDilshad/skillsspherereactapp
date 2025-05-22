@@ -48,19 +48,19 @@ export function Footer() {
           </h3>
           <ul>
             <li>
-              <a href="/about" className="text-neutral-300 mx-5">Faqs</a>
+              <a href="/Faqs" className="text-neutral-300 mx-5">Faqs</a>
             </li>
             <li>
-              <a href="/contact" className="text-neutral-300 mx-5">Privacy Policy</a>
+              <a href="/privacy" className="text-neutral-300 mx-5">Privacy Policy</a>
             </li>
             <li>
-              <a href="/courses" className="text-neutral-300 mx-5">Terms & Conditions</a>
+              <a href="/terms" className="text-neutral-300 mx-5">Terms & Conditions</a>
             </li>
             <li>
-              <a href="/blogs" className="text-neutral-300 mx-5">Support</a>
+              <a href="/contact" className="text-neutral-300 mx-5">Support</a>
             </li>
             <li>
-              <a href="/products" className="text-neutral-300 mx-5">Become a tutor</a>
+              <a href="/tutorform" className="text-neutral-300 mx-5">Become a tutor</a>
             </li>
           </ul>
         </div>
@@ -71,7 +71,6 @@ export function Footer() {
           <p className="text-sm lg:text-base  max-w-2xl text-neutral-300 text-left font-normal mx-5">
             Email: sillzsphere@gmail.com<br />
             Phone: +92 3706777957<br />
-            Address: PCSIR Phase 1, Lahore
           </p>
         </div>
       </div>
