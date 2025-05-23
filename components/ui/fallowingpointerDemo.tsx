@@ -1,8 +1,7 @@
 'use client'
-
 import React, { useState } from 'react'
-import { Input } from '@/components/ui/input'
 import { FollowerPointerCard } from '@/components/ui/following-pointer'
+
 import Image from 'next/image'
 
 interface CourseContent {
@@ -17,27 +16,43 @@ interface CourseContent {
 const blogContents: CourseContent[] = [
   {
     author: 'Ibrahim',
-    authorAvatar: '/images/ibrahim.jpg',
+    authorAvatar: '/courseteachers/2025011623184300.png',
     image: '/images/stamo logo.png',
     title: 'Mastering Web Development',
-    description: 'Learn HTML, CSS, JavaScript, and modern frameworks.',
-    date: 'May 12, 2025',
+    description: 'Learn HTML, CSS, JavaScript, and modern frameworks. Build responsive websites.',
+    date: 'RS 10,000',
   },
   {
     author: 'Amir Abbas',
-    authorAvatar: '/images/amir.jpg',
+    authorAvatar: '/courseteachers/unknown.png',
     image: '/images/stamo logo.png',
-    title: 'Advanced Graphic Design',
-    description: 'Design stunning visuals with Figma, Adobe, and Canva.',
-    date: 'May 10, 2025',
+    title: 'Digital Marketing',
+    description: 'Strategies for online success. SEO, PPC, and social media.',
+    date: 'RS 10,000',
   },
   {
     author: 'Saad Rafique',
-    authorAvatar: '/images/saad.jpg',
+    authorAvatar: '/courseteachers/unknown.png',
     image: '/images/stamo logo.png',
-    title: 'Start Your Own E-Commerce Store',
-    description: 'Launch and scale your store with zero upfront cost.',
-    date: 'May 8, 2025',
+    title: 'French Language Beginner to Advanced',
+    description: 'Learn French from scratch to fluency. Join us for an immersive experience.',
+    date: 'RS 10,000',
+  },
+  {
+    author: 'Fatima Dilshad',
+    authorAvatar: '/courseteachers/unknown.png',
+    image: '/images/stamo logo.png',
+    title: 'Development Communication Skills',
+    description: 'Enhance your communication skills for personal and professional growth.',
+    date: 'RS 10,000',
+  },
+  {
+    author: 'Khubaib Ahmed',
+    authorAvatar: '/courseteachers/unknown.png',
+    image: '/images/stamo logo.png',
+    title: 'Graphic Designing',
+    description: 'Learn the art of visual communication. Create stunning graphics.',
+    date: 'RS 10,000',
   },
 ]
 
@@ -96,7 +111,7 @@ export function SearchBarDemo() {
           </div>
         ) : (
           filteredContent.map((course, index) => (
-            <div key={index} className="mx-auto w-80">
+            <div key={index} className="mx-auto w-full max-w-sm">
               <FollowerPointerCard
                 title={
                   <TitleComponent
@@ -112,7 +127,7 @@ export function SearchBarDemo() {
                       height={1000}
                       src={course.image}
                       alt="thumbnail"
-                      className="h-full w-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
+                      className="h-full w-full object-cover transition duration-200 rounded-tl-lg rounded-tr-lg"
                     />
                   </div>
                   <div className="p-4">
