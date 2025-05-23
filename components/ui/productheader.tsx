@@ -3,35 +3,52 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
-      text: "Get",
-    },
-    {
-      text: "your",
-    },
-    {
-      text: "need",
-    },
-    {
-      text: "in seconds",
-    },
-    {
-      text: "Skills Sphere.",
+      text: "Everything",
       className: "text-blue-500",
+    },
+    {
+      text: "You",
+    },
+    {
+      text: "Need",
+    },
+    {
+      text: "To",
+    },
+    {
+      text: "Learn,",
+    },
+    {
+    text:"Work",
+    },
+    {
+      text:"And",
+    },
+    {
+      text: " Win",
     },
   ];
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-transparent">
       <p className="text-neutral-300 text-xs sm:text-base">
-        The road to freedom starts from here
+        Boost your study and work with top gear
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-black border border-white text-white text-sm">
-          Join now
-        </button>
-        <button className="w-40 h-10 rounded-xl bg-neutral-900 text-white border border-white text-sm">
-          Signup
-        </button>
+        <a
+          href="https://wa.me/923289451617"
+          className="w-40 h-10 rounded-xl bg-black border border-white text-white text-sm flex items-center justify-center"
+        >
+          Sell Yours
+        </a>
+        <a
+          href="https://wa.me/923289451617"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-40 h-10 rounded-xl bg-neutral-900 text-white border border-white text-sm flex items-center justify-center"
+        >
+          Contact
+        </a>
       </div>
     </div>
   );
