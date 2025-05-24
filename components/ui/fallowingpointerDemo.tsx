@@ -154,14 +154,14 @@ export function SearchBarDemo() {
                     <p className="mb-4 text-sm font-normal text-neutral-600">
                       {course.description}
                     </p>
-                    <div className="mt-6 flex items-center justify-between">
-                      <span className="text-sm text-neutral-500">
-                        {course.date}
-                      </span>
-                      <div className="z-10 rounded-xl bg-neutral-900 px-6 py-2 text-xs font-bold text-white">
-                        Read More
-                      </div>
-                    </div>
+                    <a
+                      href={`https://wa.me/923706777957?text=I'm%20interested%20in%20learning%20more%20about%20${encodeURIComponent(course.title)}%20from%20SkillSphere.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-2 px-4 py-2 rounded-full bg-neutral-900 text-white font-semibold text-sm shadow hover:bg-neutral-800 transition"
+                    >
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </FollowerPointerCard>

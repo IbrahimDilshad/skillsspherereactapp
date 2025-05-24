@@ -60,7 +60,7 @@ export function NavbarDemo() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton href="/login" variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Whatsapp</NavbarButton>
+            <NavbarButton href="" variant="primary">Whatsapp</NavbarButton>
           </div>
         </NavBody>
 
