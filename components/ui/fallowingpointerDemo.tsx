@@ -15,9 +15,9 @@ interface CourseContent {
 
 const blogContents: CourseContent[] = [
   {
-    author: 'Ibrahim',
+    author: 'Ibrahim Dilshad',
     authorAvatar: '/courseteachers/2025011623184300.png',
-    image: '/images/stamo logo.png',
+    image: '/courseimages/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg',
     title: 'Mastering Web Development',
     description: 'Learn HTML, CSS, JavaScript, and modern frameworks. Build responsive websites.',
     date: 'RS 10,000',
@@ -25,7 +25,7 @@ const blogContents: CourseContent[] = [
   {
     author: 'Amir Abbas',
     authorAvatar: '/courseteachers/unknown.png',
-    image: '/images/stamo logo.png',
+    image: '/courseimages/pexels-leofallflat-1737957.jpg',
     title: 'Digital Marketing',
     description: 'Strategies for online success. SEO, PPC, and social media.',
     date: 'RS 10,000',
@@ -33,7 +33,7 @@ const blogContents: CourseContent[] = [
   {
     author: 'Saad Rafique',
     authorAvatar: '/courseteachers/unknown.png',
-    image: '/images/stamo logo.png',
+    image: '/courseimages/pexels-sophie-kat-784393184-32153532.jpg',
     title: 'French Language Beginner to Advanced',
     description: 'Learn French from scratch to fluency. Join us for an immersive experience.',
     date: 'RS 10,000',
@@ -41,7 +41,7 @@ const blogContents: CourseContent[] = [
   {
     author: 'Fatima Dilshad',
     authorAvatar: '/courseteachers/unknown.png',
-    image: '/images/stamo logo.png',
+    image: '/courseimages/pexels-polina-zimmerman-3782235.jpg',
     title: 'Development Communication Skills',
     description: 'Enhance your communication skills for personal and professional growth.',
     date: 'RS 10,000',
@@ -49,11 +49,28 @@ const blogContents: CourseContent[] = [
   {
     author: 'Khubaib Ahmed',
     authorAvatar: '/courseteachers/unknown.png',
-    image: '/images/stamo logo.png',
+    image: '/courseimages/tran-mau-tri-tam-g-pKprPg5yw-unsplash.jpg',
     title: 'Graphic Designing',
     description: 'Learn the art of visual communication. Create stunning graphics.',
     date: 'RS 10,000',
   },
+  {
+    author: 'Ibrahim Dilshad',
+    authorAvatar: '/courseteachers/2025011623184300.png',
+    image: '/courseimages/pexels-designecologist-1779487.jpg',
+    title: 'Web Designing',
+    description: 'Create beautiful and user-friendly websites. Learn design principles and tools.',
+    date: 'RS 5,000',
+  },
+  {
+    author: 'Saad Rafique',
+    authorAvatar: '/courseteachers/unknown.png',
+    image: '/courseimages/pexels-suzyhazelwood-1329645.jpg',
+    title: 'English Language Beginner to Advanced. ',
+    description: 'Learn English from scratch to fluency. Join us for an immersive experience.',
+    date: 'RS 5,000',
+  },
+  
 ]
 
 const TitleComponent = ({
