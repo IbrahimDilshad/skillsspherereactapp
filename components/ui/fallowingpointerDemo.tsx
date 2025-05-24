@@ -48,7 +48,7 @@ const blogContents: CourseContent[] = [
   },
   {
     author: 'Khubaib Ahmed',
-    authorAvatar: '/courseteachers/unknown.png',
+    authorAvatar: '/courseteachers/khubaibavatar1.jpg',
     image: '/courseimages/tran-mau-tri-tam-g-pKprPg5yw-unsplash.jpg',
     title: 'Graphic Designing',
     description: 'Learn the art of visual communication. Create stunning graphics.',
