@@ -128,7 +128,7 @@ export function SearchBarDemo() {
           </div>
         ) : (
           filteredContent.map((course, index) => (
-            <div key={index} className="mx-auto w-full max-w-sm cursor-none">
+            <div key={index} className="mx-auto w-full max-w-sm">
               <FollowerPointerCard
                 title={
                   <TitleComponent
