@@ -8,22 +8,56 @@ import Image from "next/image";
 // Tutor Cards Data (replace this with your actual data structure)
 const tutorCards = [
   {
-    title: "John Doe",
-    description: "Math tutor with 5 years of experienceMath tutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experiencetutor with 5 years of experience",
-    location: "New York",
-    subject: "Math",
-    area: "Manhattan",
-    src: "/images/stamp logo.png",  // Replace with actual image paths
-    ctaLink: "#"
+    title: "Ibrahim DIlshad",
+    description: "Learn spoken English, grammar, and writing with personalized guidance. Whether you're a student or a professional, build fluency, boost confidence, and speak like a pro. Flexible timings and friendly environment!",
+    location: "Lahore",
+    subject: "Spoken English & Grammar",
+    Class: "All",
+    mode: "Online",
+    area: "Johr Town",
+    price: "Rs. 5000",
+    src: "/courseteachers/2025011623184300.png",  // Replace with actual image paths
+    ctaLink: "#",
+    verified: true,
   },
   {
-    title: "Jane Smith",
-    description: "English tutor specializing in writing skills.",
-    location: "Los Angeles",
-    subject: "English",
-    area: "Hollywood",
-    src: "/images/stamp logo.png",  // Replace with actual image paths
-    ctaLink: "#"
+    title: "Tahreem",
+    description: "Understand complex concepts with ease—from cell structure to genetics. Ideal for Matric, FSc, and O/A Level students. Get personalized help, exam preparation, and interactive lessons that make Biology simple and fun.",
+    location: "Shakargarh",
+    subject: "Biology",
+    Class: "9th & 10th",
+    mode: "Online",
+    area: "Not Specified",
+    price: "Rs. 5000",
+    src: "/courseteachers/unknown2.png",  // Replace with actual image paths
+    ctaLink: "#",
+    verified: true,
+  },
+  {
+    title: "Saad Rafique",
+    description: "Start your French journey or level up with structured, friendly lessons. Master grammar, vocabulary, speaking, and listening perfect for DELF exam prep, travel, or career growth. Interactive, personalized, and beginner-friendly!",
+    location: "Lahore",
+    subject: "French Language",
+    Class: "All",
+    mode: "Online",
+    area: "Not Specified",
+    price: "Rs. 10,000",
+    src: "/tuitionteachers/Saad Rafique.jpg",  // Replace with actual image paths
+    ctaLink: "#",
+    verified: true,
+  },
+  {
+    title: "Mehran Javaid",
+    description: "Learn French from A1 to A2 and improve your English with clear, beginner-friendly lessons. Ideal for students, travelers, or DELF prep. Focus on speaking, grammar, and confidence—tailored just for you!",
+    location: "Lahore",
+    subject: "English & French",
+    mode: "Online & Offline",
+    Class: "All",
+    area: "Not Specified",
+    price: "Rs. 5000",
+    src: "/tuitionteachers/Mehran Javed.jpg",  // Replace with actual image paths
+    ctaLink: "#",
+    verified: true,
   },
   // Add your other tutor cards here
 ];
@@ -41,7 +75,10 @@ export function ExpandableCardDemo() {
       card.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
       card.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
       card.subject.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      card.area.toLowerCase().includes(searchQuery.toLowerCase())
+      card.mode.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      card.area.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      card.price.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      card.verified.toString().toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   useEffect(() => {
@@ -109,8 +146,8 @@ export function ExpandableCardDemo() {
             >
               <motion.div layoutId={`image-${active.title}-${id.current}`}>
                 <Image
-                  width={200}
-                  height={200}
+                  width={600}
+                  height={320}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -175,32 +212,76 @@ export function ExpandableCardDemo() {
               <div className="flex gap-4 flex-col w-full">
                 <motion.div layoutId={`image-${card.title}-${id.current}`}>
                   <Image
-                    width={100}
-                    height={100}
+                    width={400}
+                    height={240}
                     src={card.src}
                     alt={card.title}
                     className="h-60 w-full rounded-lg object-cover object-top"
                   />
                 </motion.div>
                 <div className="flex justify-center items-center flex-col mt-2">
-                  <motion.h3
-                    layoutId={`title-${card.title}-${id.current}`}
-                    className="font-medium text-neutral-200 text-center md:text-left text-base"
-                  >
-                    {card.title}
-                  </motion.h3>
-                  <div className="mt-2 flex flex-col gap-1 text-xs text-neutral-400 text-center">
-                    <div>
-                      <span className="font-semibold text-neutral-300">Location:</span>{" "}
-                      <span className="text-neutral-400">{card.location}</span>
+                  <div className="flex items-center justify-center gap-1">
+                    {/* Subject as main heading, now bold and larger */}
+                    <motion.h3
+                      layoutId={`title-${card.title}-${id.current}`}
+                      className="font-bold text-lg text-white text-center md:text-left"
+                    >
+                      {card.subject}
+                    </motion.h3>
+                    {card.verified && (
+                      <span title="Verified" className="ml-1 inline-flex items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          className="drop-shadow"
+                        >
+                          <g filter="url(#shadow)">
+                            <circle cx="12" cy="12" r="10" fill="#1D9BF0" />
+                            <path
+                              d="M8.5 12.5l2.2 2.2 4.3-4.4"
+                              stroke="#fff"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              fill="none"
+                            />
+                          </g>
+                          <defs>
+                            <filter id="shadow" x="0" y="0" width="24" height="24" filterUnits="userSpaceOnUse">
+                              <feDropShadow dx="0" dy="1" stdDeviation="1" floodColor="#000" floodOpacity="0.25"/>
+                            </filter>
+                          </defs>
+                        </svg>
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-3 grid grid-cols-2 gap-x-2 gap-y-1 text-xs text-neutral-400 w-full">
+                    <div className="flex flex-col items-start">
+                      <span className="font-semibold text-neutral-300">Location</span>
+                      <span>{card.location}</span>
                     </div>
-                    <div>
-                      <span className="font-semibold text-neutral-300">Subject:</span>{" "}
-                      <span className="text-neutral-400">{card.subject}</span>
+                    <div className="flex flex-col items-start">
+                      <span className="font-semibold text-neutral-300">Area</span>
+                      <span>{card.area}</span>
                     </div>
-                    <div>
-                      <span className="font-semibold text-neutral-300">Area:</span>{" "}
-                      <span className="text-neutral-400">{card.area}</span>
+                    <div className="flex flex-col items-start">
+                      <span className="font-semibold text-neutral-300">Name</span>
+                      <span>{card.title}</span>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <span className="font-semibold text-neutral-300">Class</span>
+                      <span>{card.Class}</span>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <span className="font-semibold text-neutral-300">Mode</span>
+                      <span>{card.mode}</span>
+                    </div>
+                    <div className="flex flex-col items-start col-span-2">
+                      <span className="font-semibold text-neutral-300">Price</span>
+                      <span className="text-base font-bold text-white">{card.price}</span>
                     </div>
                   </div>
                 </div>

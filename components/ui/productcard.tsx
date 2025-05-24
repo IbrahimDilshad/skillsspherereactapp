@@ -142,9 +142,11 @@ Wired gaming mouse lightweight design`,
               <Image
                 src={product.image}
                 alt={product.title}
-                height={400}
-                width={400}
-                className="object-contain w-full h-auto"
+                width={600} // Increased width for better clarity
+                height={400} // Increased height for better clarity
+                className="object-cover w-full h-64 rounded-xl" // Use object-cover and fixed height for sharpness
+                quality={90} // Optional: increase quality for sharper images
+                priority={index < 4} // Optional: prioritize loading for first row
               />
               <p className="text-base sm:text-xl text-white mt-4 mb-2">
                 {product.title}
