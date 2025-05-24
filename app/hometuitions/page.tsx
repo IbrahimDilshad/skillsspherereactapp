@@ -12,7 +12,6 @@ export default function hometuition() {
     <div>
       <NavbarDemo />
       <CoverDemo />
-      
       <ExpandableCardDemo />
       <Footer />
     </div>

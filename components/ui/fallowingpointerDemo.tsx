@@ -137,7 +137,7 @@ export function SearchBarDemo() {
                   />
                 }
               >
-                <div className="group relative h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl">
+                <div className="group relative h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl cursor-none">
                   <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-neutral-100">
                     <Image
                       width={1000}
