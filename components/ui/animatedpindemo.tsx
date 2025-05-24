@@ -159,11 +159,13 @@ export function AnimatedPinDemo() {
 							>
 								<div className="w-full h-44 rounded-t-2xl overflow-hidden flex items-center justify-center bg-black border-b border-neutral-800">
 									<Image
-										width={180}
-										height={176}
+										width={220}
+										height={220}
 										src={book.imageSrc}
 										alt={book.title}
-										className="object-contain w-full h-full drop-shadow-lg"
+										className="object-contain w-[180px] h-[180px] md:w-[200px] md:h-[200px] max-w-full max-h-full drop-shadow-lg"
+										priority
+										quality={100}
 									/>
 								</div>
 								<div className="flex flex-col flex-1 w-full px-5 py-4">
