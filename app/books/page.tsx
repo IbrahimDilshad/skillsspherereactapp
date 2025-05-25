@@ -4,7 +4,7 @@ import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { Footer } from "@/components/ui/footer";
 import { LampDemo } from "@/components/ui/lampDemo";
 import { AnimatedPinDemo }  from "@/components/ui/animatedpindemo";
-
+import { DailyUpdateNotice } from "@/components/ui/DailyUpdateNotice";
 
 
 
@@ -18,6 +18,7 @@ export default function Bookspagemain() {
   <NavbarDemo />
   <LampDemo />
   <AnimatedPinDemo />
+  <DailyUpdateNotice />
   <Footer />
   </div>
   )

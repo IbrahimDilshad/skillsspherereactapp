@@ -1,31 +1,38 @@
 "use client";
-import { IconAdjustmentsBolt, IconCloud, IconCurrencyDollar, IconEaseInOut, IconHeart, IconHelp, IconRouteAltLeft, IconSquareRoundedX, IconTerminal2 } from "@tabler/icons-react";
+import {
+  IconTerminal2,
+  IconBook,
+  IconCurrencyDollar,
+  IconTrendingUp,
+} from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
+
 //why choose us 
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Learn from Industry Experts",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Our instructors are real professionals with hands-on experience — not just theory. You get practical skills from those who’ve done the work.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "All-in-One Learning Ecosystem",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "From online courses to premium eBooks and digital tools — everything you need to grow is in one seamless platform.",
+      icon: <IconBook />,
     },
     {
-      title: "Pricing like no other",
+      title: "Flexible & Affordable Access",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "We believe quality education should be accessible. Learn at your pace, on your schedule, without breaking the bank.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: "Built for Career Growth",
+      description:
+        "Our content is designed to help you land jobs, grow businesses, and thrive in today’s competitive market — not just earn certificates.",
+      icon: <IconTrendingUp />,
     },
   ];
   return (

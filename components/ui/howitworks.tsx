@@ -6,28 +6,16 @@ import { MultiStepLoader as Loader } from "@/components/ui/multi-step-loader";
 //how it works
 const loadingStates = [
   {
-    text: "Buying a condo",
+    text: "Discover Your Potential",
   },
   {
-    text: "Travelling in a flight",
+    text: "Choose Your Path",
   },
   {
-    text: "Meeting Tyler Durden",
+    text: "Immerse Yourself",
   },
   {
-    text: "He makes soap",
-  },
-  {
-    text: "We goto a bar",
-  },
-  {
-    text: "Start a fight",
-  },
-  {
-    text: "We like it",
-  },
-  {
-    text: "Welcome to F**** C***",
+    text: "Elevate Your Future",
   },
 ];
  
@@ -41,7 +29,7 @@ export function MultiStepLoaderDemo() {
       </p>
       <p className="text-sm md:text-base text-neutral-300 mt-2 mb-2">
 
-        Dicouver our process of getting you started with us.
+        Turn ambition into achievement. One step at a time !
       </p>
       <HoverBorderGradient
         onClick={() => setLoading(true)}

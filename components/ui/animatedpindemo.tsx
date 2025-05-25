@@ -183,21 +183,17 @@ export function AnimatedPinDemo() {
 									</p>
 									{isExpanded && (
 										<div className="flex justify-center mt-4">
-											<a
+											<HoverBorderGradient
+												as="a"
 												href={book.pdfLink}
-												download
-												className="w-auto min-w-[140px]"
+												onLoad
+												className="w-auto min-w-[140px] px-6 py-2 rounded-full flex items-center justify-center font-bold text-white text-base"
 											>
-												<HoverBorderGradient
-													as="div"
-													className="px-6 py-2 rounded-full flex items-center justify-center font-bold text-white text-base"
-												>
-													<span className="flex items-center gap-2">
-														{/* ...icon... */}
-														Download
-													</span>
-												</HoverBorderGradient>
-											</a>
+												<span className="flex items-center gap-2">
+													{/* ...icon... */}
+													Download
+												</span>
+											</HoverBorderGradient>
 										</div>
 									)}
 								</div>

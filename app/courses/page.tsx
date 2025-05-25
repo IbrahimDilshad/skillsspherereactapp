@@ -4,7 +4,7 @@ import { NavbarDemo } from "@/components/ui/navbarDemo";
 import { MacbookScrollDemo } from "@/components/ui/macbookscrolldemo";
 import { Footer } from "@/components/ui/footer";
 import { SearchBarDemo } from "@/components/ui/fallowingpointerDemo";
-
+import { DailyUpdateNotice } from "@/components/ui/DailyUpdateNotice";
 
 
 
@@ -15,6 +15,7 @@ export default function CoursesPage() {
       <NavbarDemo />
       <MacbookScrollDemo />
       <SearchBarDemo />
+      <DailyUpdateNotice />
       <Footer />
     </div>
   );
