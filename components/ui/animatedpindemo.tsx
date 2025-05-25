@@ -186,7 +186,7 @@ export function AnimatedPinDemo() {
 											<HoverBorderGradient
 												as="a"
 												href={book.pdfLink}
-												onLoad
+												download
 												className="w-auto min-w-[140px] px-6 py-2 rounded-full flex items-center justify-center font-bold text-white text-base"
 											>
 												<span className="flex items-center gap-2">

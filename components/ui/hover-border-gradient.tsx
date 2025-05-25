@@ -13,6 +13,7 @@ interface HoverBorderGradientProps extends React.HTMLAttributes<HTMLElement> {
   duration?: number;
   clockwise?: boolean;
   children: React.ReactNode;
+  download?: boolean;
 }
 
 export function HoverBorderGradient({
